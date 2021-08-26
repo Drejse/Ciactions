@@ -35,5 +35,5 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-name: Maven deploy
-  run: mvn -Dremote.user=${{ secrets.REMOTE_USER }} -Dremote.password=${{ secrets.REMOTE_PW }} tomcat7:deploy
+	- name: Maven deploy
+  	run: mvn -Dremote.user=${{ secrets.REMOTE_USER }} -	Dremote.password=${{ secrets.REMOTE_PW }} tomcat7:deploy
